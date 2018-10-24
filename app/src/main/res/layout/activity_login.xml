@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:fitsSystemWindows="true">
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ImageView
+      android:src="@drawable/login_image"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:text="PUP.AI"
+      android:textSize="50dp"/>
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textEmailAddress"
+      android:hint="@string/email"
+      android:id="@+id/et_email" />
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textPassword"
+      android:hint="@string/password"
+      android:id="@+id/et_password" />
+
+    <Button
+      android:id="@+id/bt_login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/login"
+      android:textSize="20dp" />
+
+    <TextView
+      android:id="@+id/link_signup"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:layout_marginBottom="24dp"
+      android:text="No account yet? Create one"
+      android:gravity="center"
+      android:textSize="17dp"/>
+
+    <TextView
+      android:id="@+id/link_main"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="24dp"
+      android:text="Use without signing in!"
+      android:gravity="center"
+      android:textSize="16dp"/>
+
+  </LinearLayout>
+</ScrollView>
